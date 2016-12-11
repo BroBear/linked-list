@@ -1,0 +1,54 @@
+body {
+ font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #455A64;
+  padding: 15px 0;
+}
+
+h1 {
+  font-weight: 800;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.logo {
+  width: 30px;
+}
+
+.main {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.url-input, .url-title {
+  width: 100%;
+  font-size: 1.5em;
+  margin: 0 auto;
+  padding: 3px 5px;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  width: 100%;
+  text-align: center;
+  border-style: none;
+  padding: 10px 0;
+}
+
+.sites-list {
+  background-color;
+  padding: 10px;
+}
+
+.stored-site {
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px;
+}
+
+h5 {
+  border-bottom: 1px solid grey;
+}

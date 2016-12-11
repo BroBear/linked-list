@@ -52,3 +52,7 @@ h1 {
 h5 {
   border-bottom: 1px solid grey;
 }
+
+.read {
+  color: red;
+}

@@ -1,3 +1,7 @@
+$('#read-btn').click(function(){
+   $('#site').toggleClass('vertical');
+});
+
 // Creates bookmark properties
 function CreateBookmark (webTitle, webUrl) {
   this.title = webTitle;
@@ -8,9 +12,9 @@ function CreateBookmark (webTitle, webUrl) {
 function bookmarkContent(createBookmark) {
   $( ".bookmarks" ).prepend(`
     <article class="stored-site">
-      <h5 contenteditable>${createBookmark.title}</h5>
-      <p class="unread" contenteditable>${createBookmark.url}</p>
-      <input type="submit" value="Read" class="read-btn">
+      <h5>${createBookmark.title}</h5>
+      <p id="site">${createBookmark.url}</p>
+      <input type="submit" value="Read" id="read-btn">
       <input type="submit" value="Delete">
     </article>`
   );
@@ -23,4 +27,8 @@ $( ".enter-btn" ).click(function() {
   var createBookmark = new CreateBookmark(webTitle, webUrl);
   bookmarkContent(createBookmark);
   console.log(webTitle);
+});
+
+$('#btn').click(function(){
+   $('#foo-bar').toggleClass('vertical');
 });

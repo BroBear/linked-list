@@ -33,7 +33,7 @@ function bookmarkContent(createBookmark) {
   $(".bookmarks").prepend(`
     <article class="stored-site">
       <h5>${createBookmark.title}</h5>
-      <p class="unread"><a href="${createBookmark.url}" target="_blank">http://${createBookmark.url}</a></p>
+      <p class="unread"><a href="${createBookmark.url}" target="_blank">${createBookmark.url}</a></p>
       <input type="submit" value="Read" id="read-btn">
       <input type="submit" value="Delete" id="delete-btn">
     </article>`
@@ -53,11 +53,10 @@ function resetInputFields() {
   $( ".web-title" ).val('');
   $( ".web-url" ).val('');
 }
-
-//need to make clear button
-$( ".bookmarks" ).on("click", "#xxxxx-btn", function() {
-  $(".stored-site").remove();
-    });
+ //clear bookmarks button
+$( ".clear-btn" ).on("click",function() {
+  $('.stored-site').remove();
+  });
 
 //binds the enter button to typing in inputfields
 $( ".web-title, .web-url" ).keyup(function() {
@@ -68,8 +67,8 @@ $( ".web-title, .web-url" ).keyup(function() {
 $( ".enter-btn" ).click(function() {
   makeBookmark();
   resetInputFields();
-  totalLinks()
-  unreadLinks()
+  totalLinks();
+  unreadLinks();
   buttonEnabler();
 });
 
@@ -77,12 +76,17 @@ $( ".enter-btn" ).click(function() {
 $( ".bookmarks" ).on("click", "#delete-btn", function() {
   $( this ).parent().remove();
   });
+function changeArticleClass() {
+$('.stored-site').toggleClass('read-bookmark');
+  $(this).toggleClass('read-bookmark');
 
+};
 // Toggle Class for Read Button
 $( ".bookmarks" ).on("click", "#read-btn", function() {
      $(this).toggleClass('read');
-     readLinks()
-     unreadLinks()
+     changeArticleClass();
+     readLinks();
+     unreadLinks();
   });
 
 // // Use Enter to submit

@@ -61,7 +61,9 @@ h5 {
   text-align: left;
   padding: 10px;
 }
-
+.read-bookmark{
+  background-color: pink;
+}
 .unread {
   color: #607D8B;
   border-bottom: 1px solid #CFD8DC;
@@ -70,5 +72,6 @@ h5 {
 }
 
 .read {
-  color: red;
+  background-color: pink;
+  color:red;
 }

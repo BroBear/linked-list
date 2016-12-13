@@ -7,21 +7,24 @@ function buttonEnabler() {
     $('.enter-btn').attr('disabled', false);
   }
 };
+
 function totalLinks() {
   var count = $(".stored-site").length;
   $('.links').text("Number of Links: "+ count);
 }
+
 function readLinks() {
   var count = $(".read").length;
   $('.read-links').text("Number of Read Links: "+ count);
 }
+
 function unreadLinks() {
   var totalBookmarks = $(".stored-site").length;
   var readBookmarks = $(".read").length;
   var unreadTotal = totalBookmarks - readBookmarks;
   $('.unread-links').text("Number of Unread Links: "+ unreadTotal);
-
 }
+
 // Creates bookmark properties
 function CreateBookmark (webTitle, webUrl) {
   this.title = webTitle;
@@ -76,6 +79,7 @@ $( ".enter-btn" ).click(function() {
 // Toggle Class for Delete Button
 $( ".bookmarks" ).on("click", "#delete-btn", function() {
   $( this ).parent().remove();
+  totalLinks();
   });
 
 // Toggle Class for Read Button

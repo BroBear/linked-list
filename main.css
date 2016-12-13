@@ -69,12 +69,6 @@ h5 {
   padding: 10px;
 }
 
-
-.horizontal
-{
-    color:green;
-}
-.vertical
-{
-    color:red;
+.read {
+  color: red;
 }

@@ -31,6 +31,7 @@ function CreateBookmark (webTitle, webUrl) {
   this.title = webTitle;
   this.url =  webUrl;
 }
+
 // Creates bookmark content and html
 function bookmarkContent(createBookmark) {
   $(".bookmarks").prepend(`
@@ -42,6 +43,7 @@ function bookmarkContent(createBookmark) {
     </article>`
   );
 }
+
 //grabs and stores user input values
 function makeBookmark() {
   var webTitle = $( ".web-title" ).val();
@@ -49,11 +51,13 @@ function makeBookmark() {
   var createBookmark = new CreateBookmark(webTitle, webUrl);
   bookmarkContent(createBookmark);
 }
+
 //resets input fields to placeholder values
 function resetInputFields() {
   $( ".web-title" ).val('');
   $( ".web-url" ).val('');
 }
+
  //clear bookmarks button
 $( ".clear-btn" ).on("click",function() {
   $('.stored-site').remove();
@@ -61,10 +65,12 @@ $( ".clear-btn" ).on("click",function() {
   unreadLinks("");
   readLinks("");
   });
+
 //binds the enter button to typing in inputfields
 $( ".web-title, .web-url" ).keyup(function() {
   buttonEnabler();
 });
+
 // Sets bookmark in motion from user input and btn click
 $( ".enter-btn" ).click(function() {
   makeBookmark();
@@ -73,6 +79,7 @@ $( ".enter-btn" ).click(function() {
   unreadLinks();
   buttonEnabler();
 });
+
 // Toggle Class for Delete Button
 $( ".bookmarks" ).on("click", "#delete-btn", function() {
   $( this ).parent().remove();
@@ -80,6 +87,7 @@ $( ".bookmarks" ).on("click", "#delete-btn", function() {
   unreadLinks();
   readLinks();
   });
+  
 // Toggle Class for Read Button
 $( ".bookmarks" ).on("click","#read-btn", function() {
      $(this).toggleClass('read');

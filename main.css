@@ -26,7 +26,7 @@ h5 {
 }
 
 .logo {
-  width: 30px;
+  width: 40px;
 }
 
 .main {
@@ -65,7 +65,7 @@ h5 {
 }
 
 .bookmarks {
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 10px;
 }
 
@@ -126,10 +126,9 @@ h5 {
 @media screen and (min-width: 700px) {
 
   div {
-    border: 2px solid black;
     height:150px;
     margin: 50px auto;
-    width: 340px;
+    width: 100%;
   }
 
   .large {
@@ -139,17 +138,20 @@ h5 {
     text-align: center;
 
   }
-
+  .full-logo {
+    margin-top: 100px;
+  }
 
   .main {
-    width:46%;
+    width:50%;
     display:inline-block;
     height: 100vh;
-    background-color: #455A64;
-    margin-left: -2%;
+    background-color:#455A64;
+    float:left;
+    padding:5px;
   }
   .bookmarks{
-    width:50%;
+    width:45%;
     display:inline-block;
     float: right;
   }

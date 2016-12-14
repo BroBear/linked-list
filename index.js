@@ -93,4 +93,4 @@ $( ".bookmarks" ).on("click","#read-btn", function() {
      $(this).closest('.stored-site').toggleClass('read-bookmark');
      readLinks();
      unreadLinks();
-  });
+  }); 

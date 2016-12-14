@@ -1,10 +1,11 @@
-function buttonEnabler() {
+function buttonEnabler(e) {
   var webTitle = $( ".web-title" ).val();
   var webUrl = /\www\./.test($( ".web-url" ).val());
   if( webTitle && webUrl) {
     $('.enter-btn').attr('disabled', false);
   } else {
     $('.enter-btn').attr('disabled', true);
+    e.preventDefault();
   }
 };
 
@@ -93,4 +94,4 @@ $( ".bookmarks" ).on("click","#read-btn", function() {
      $(this).closest('.stored-site').toggleClass('read-bookmark');
      readLinks();
      unreadLinks();
-  }); 
+  });

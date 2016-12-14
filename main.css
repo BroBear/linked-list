@@ -40,7 +40,7 @@ h5 {
 .web-title, .web-url {
   margin: 10px auto;
   padding: 3px 0px;
-  width: 80%;
+  width: 90%;
   border: 2px solid #CFD8DC;
   font-size: 1.3em;
 }
@@ -92,7 +92,7 @@ h5 {
 .enter-btn, .clear-btn {
   margin: 10px 0 20px 0;
   padding: 10px 0px;
-  width: 80%;
+  width: 90%;
   background-color: #FFC107;
   border: 2px solid #FFC107;
   border-style: none;
@@ -111,7 +111,6 @@ h5 {
 }
 
 .button {
-  margin-top: 6px;
   background-color: white;
   border-bottom: 1px solid #F2F4F4;
   border-style: none;
@@ -127,6 +126,7 @@ h5 {
 
 #delete-btn {
   float: right;
+  background-color: transparent;
 }
 
 .read {
@@ -171,7 +171,9 @@ h5 {
   }
 
   .stored-site {
+    margin: 0 auto;
     padding: 0 10px;
+    width: 94%;
   }
 
   .enter-btn, .clear-btn {

@@ -1,28 +1,27 @@
 body {
- font-family: 'Open Sans', sans-serif;
- background-color: #CFD8DC;
- text-align: center;
-
+  text-align: center;
+  background-color: #CFD8DC;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
-  background-color: #455A64;
   padding: 15px 0;
+  background-color: #455A64;
 }
 
 h1 {
-  font-weight: 800;
-  color: #FFFFFF;
   text-align: center;
+  color: #FFFFFF;
   font-size: 1.3em;
+  font-weight: 800;
 }
 
 h5 {
-  color: #455A64;
-  font-weight: 800;
-  border-bottom: 1px solid #CFD8DC;
   padding: 10px 0px;
+  border-bottom: 1px solid #CFD8DC;
+  color: #455A64;
   font-size: 20px;
+  font-weight: 800;
 }
 
 .logo {
@@ -30,38 +29,22 @@ h5 {
 }
 
 .main {
+  padding-bottom: 10px;
   width: 100%;
   background-color: #455A64;
-  padding-bottom: 10px;
-
 }
+
 .web-title, .web-url {
-  width: 90%;
   margin: 10px auto;
   padding: 3px 0px;
-  font-size: 1.3em;
-  border: 2px solid #CFD8DC;
-}
-
-.enter-btn, .clear-btn {
-  background-color: #FFC107;
-  border-style: none;
-  color: white;
-  font-size: 1em;
-  font-weight: 800;
-  margin: 10px 0 20px 0;
-  padding: 10px 0px;
   width: 90%;
-  border: 2px solid #FFC107;
-}
-
-.enter-btn:hover, .clear-btn:hover {
-  background-color: #FFD773;
+  border: 2px solid #CFD8DC;
+  font-size: 1.3em;
 }
 
 .amount {
-  color: white;
   margin-bottom: 5px;
+  color: white;
 }
 
 .bookmarks {
@@ -70,36 +53,59 @@ h5 {
 }
 
 .stored-site {
-  background-color: white;
-  border: 1px solid #607D84;
   margin-bottom: 10px;
   padding: 10px;
   text-align: left;
+  background-color: white;
+  border: 1px solid #607D84;
 }
 
 .unread {
+  padding: 17px 0px;
   border-bottom: 1px solid #CFD8DC;
   color: #607D8B;
   font-size: .9em;
-  padding: 17px 0px;
 }
 
 .link {
+  border-bottom: 1px solid #F2F4F4;
   color: #607D8B;
   text-decoration: none;
-  border-bottom: 1px solid #F2F4F4;
 }
 
 .link:hover {
-  border-bottom: 2px solid #FFC107;
   font-weight: 800;
+  border-bottom: 2px solid #FFC107;
+}
+
+.enter-btn, .clear-btn {
+  margin: 10px 0 20px 0;
+  padding: 10px 0px;
+  width: 90%;
+  background-color: #FFC107;
+  border: 2px solid #FFC107;
+  border-style: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 800;
+  outline: none;
+}
+
+.enter-btn:hover, .clear-btn:hover {
+  background-color: #FFD773;
+}
+
+.button:focus,
+.clear-btn:focus,
+.enter-btn:focus, {
+  outline: none;
 }
 
 .button {
-  background-color: white;
-  border-style: none;
-  border-bottom: 1px solid #F2F4F4;
   margin-top: 6px;
+  background-color: white;
+  border-bottom: 1px solid #F2F4F4;
+  border-style: none;
   color: #455A64;
   font-size: 14px;
 }
@@ -115,8 +121,8 @@ h5 {
 }
 
 .read {
-  color: #F05A28;
   background-color: #F2F4F4;
+  color: #F05A28;
 }
 
 .read-bookmark {
@@ -132,10 +138,10 @@ h5 {
   }
 
   .large {
-    font-weight: 800;
-    font-size: 2.8em;
-    color: #FFFFFF;
     text-align: center;
+    color: #FFFFFF;
+    font-size: 2.8em;
+    font-weight: 800;
 
   }
   .full-logo {
@@ -143,18 +149,20 @@ h5 {
   }
 
   .main {
-    width:50%;
-    display:inline-block;
-    height: 100vh;
-    background-color:#455A64;
+    display: inline-block;
     float:left;
+    height: 100vh;
     padding:5px;
+    width:50%;
+    background-color:#455A64;
   }
-  .bookmarks{
-    width:45%;
+
+  .bookmarks {
     display:inline-block;
     float: right;
+    width:45%;
   }
+
   header {
     display: none;
   }

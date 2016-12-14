@@ -3,9 +3,8 @@ function buttonEnabler() {
   var webUrl = /\www\./.test($( ".web-url" ).val());
   if( webTitle && webUrl) {
     $('.enter-btn').attr('disabled', false);
-  } else{
+  } else {
     $('.enter-btn').attr('disabled', true);
-    alert
   }
 };
 
@@ -73,11 +72,11 @@ $( ".web-title, .web-url" ).keyup(function() {
 
 // Sets bookmark in motion from user input and btn click
 $( ".enter-btn" ).click(function() {
+  buttonEnabler();
   makeBookmark();
   resetInputFields();
   totalLinks();
   unreadLinks();
-  buttonEnabler();
 });
 
 // Toggle Class for Delete Button
@@ -87,7 +86,7 @@ $( ".bookmarks" ).on("click", "#delete-btn", function() {
   unreadLinks();
   readLinks();
   });
-  
+
 // Toggle Class for Read Button
 $( ".bookmarks" ).on("click","#read-btn", function() {
      $(this).toggleClass('read');

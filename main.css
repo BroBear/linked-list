@@ -30,6 +30,7 @@ h5 {
 .main {
   width: 100%;
   background-color: #455A64;
+  padding-bottom: 10px;
 }
 .web-title, .web-url {
   border: 1px solid #455A64;
@@ -39,7 +40,7 @@ h5 {
   font-size: 1.3em;
 }
 
-.enter-btn {
+.enter-btn, .clear-btn {
   background-color: #FFC107;
   border-style: none;
   color: white;
@@ -50,6 +51,15 @@ h5 {
   width: 93%;
 }
 
+.enter-btn, .clear-btn:hover {
+  background-color: #FFD773;
+}
+
+.amount {
+  color: white;
+  margin-bottom: 5px;
+}
+
 .bookmarks {
   margin: 0 auto;
   padding: 10px;
@@ -58,20 +68,52 @@ h5 {
 .stored-site {
   background-color: white;
   border: 1px solid #607D84;
-  text-align: left;
+  margin-bottom: 10px;
   padding: 10px;
+  text-align: left;
 }
-.read-bookmark{
-  background-color: pink;
-}
+
 .unread {
-  color: #607D8B;
   border-bottom: 1px solid #CFD8DC;
+  color: #607D8B;
   font-size: .9em;
   padding: 10px;
 }
 
+.link {
+  color: #607D8B;
+  text-decoration: none;
+  border-bottom: 1px solid #F2F4F4;
+}
+
+.link:hover {
+  border-bottom: 2px solid #FFC107;
+  font-weight: 800;
+}
+
+.button {
+  background-color: white;
+  border-style: none;
+  border-bottom: 1px solid #F2F4F4;
+  margin-top: 6px;
+  color: #455A64;
+  font-size: 12px;
+}
+
+.button:hover {
+  border-style: none;
+  border-bottom: 2px solid #FFC107;
+  font-weight: 800;
+}
+
+#delete-btn {
+  float: right;
+}
+
 .read {
-  background-color: pink;
-  color:red;
+  color: #F05A28;;
+}
+
+.read-bookmark {
+  background-color: #F2F4F4;
 }

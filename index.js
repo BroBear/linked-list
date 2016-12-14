@@ -25,6 +25,7 @@ function unreadLinks() {
   var unreadTotal = totalBookmarks - readBookmarks;
   $('.unread-links').text("Number of Unread Links: "+ unreadTotal);
 }
+
 // Creates bookmark properties
 function CreateBookmark (webTitle, webUrl) {
   this.title = webTitle;

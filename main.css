@@ -2,6 +2,7 @@ body {
   text-align: center;
   background-color: #CFD8DC;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
 }
 
 header {
@@ -10,9 +11,10 @@ header {
 }
 
 h1 {
+  margin: 150px 0 50px 0;
   text-align: center;
   color: #FFFFFF;
-  font-size: 1.3em;
+  font-size: 2.8em;
   font-weight: 800;
 }
 
@@ -25,19 +27,20 @@ h5 {
 }
 
 .logo {
-  width: 40px;
+  width: 67px;
 }
 
 .main {
   padding-bottom: 10px;
-  width: 100%;
+  width: 50%;
+  height: 100vh;
   background-color: #455A64;
 }
 
 .web-title, .web-url {
   margin: 10px auto;
   padding: 3px 0px;
-  width: 90%;
+  width: 80%;
   border: 2px solid #CFD8DC;
   font-size: 1.3em;
 }
@@ -54,8 +57,9 @@ h5 {
 }
 
 .bookmarks {
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 10px;
+  width:50%;
 }
 
 .stored-site {
@@ -88,7 +92,7 @@ h5 {
 .enter-btn, .clear-btn {
   margin: 10px 0 20px 0;
   padding: 10px 0px;
-  width: 90%;
+  width: 80%;
   background-color: #FFC107;
   border: 2px solid #FFC107;
   border-style: none;
@@ -134,55 +138,42 @@ h5 {
   background-color: #F2F4F4;
 }
 
-@media screen and (min-width: 700px) {
 
-  div {
-    height:150px;
-    margin: 50px auto;
-    width: 100%;
+@media screen and (max-width: 750px) {
+
+  body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  .large {
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 2.8em;
-    font-weight: 800;
-
-  }
-  .full-logo {
-    margin-top: 100px;
+  h1 {
+    margin: 10px 0;
+    font-size: 1.5em;
   }
 
   .main {
-    display: inline-block;
-    float:left;
-    height: 100vh;
-    padding:5px;
-    width:50%;
-    background-color:#455A64;
+    height:40%;
+    width:100%;
   }
 
-  .bookmarks {
-    display:inline-block;
-    float: right;
-    width:45%;
-  }
-
-  header {
-    display: none;
-  }
-
-  /*.web-title, .web-url {
-    width: 70%;
+  .logo {
+    width: 30px;
   }
 
   .enter-btn, .clear-btn {
-    width: 70%;
-  }*/
-}
-
-@media screen and (max-width: 700px) {
-  div {
-    display:none;
+    margin: 10px 0 5px 0;
   }
-}
+
+  .bookmarks {
+    width: 90%;
+  }
+
+  .stored-site {
+    padding: 0 10px;
+  }
+
+  .enter-btn, .clear-btn {
+    padding: 7px 0px;
+  }

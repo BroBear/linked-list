@@ -36,9 +36,9 @@ function bookmarkContent(createBookmark) {
   $(".bookmarks").prepend(`
     <article class="stored-site">
       <h5>${createBookmark.title}</h5>
-      <p class="unread"><a href="https://${createBookmark.url}" target="_blank">${createBookmark.url}</a></p>
-      <input type="submit" value="Read" id="read-btn">
-      <input type="submit" value="Delete" id="delete-btn">
+      <p class="unread"><a href="https://${createBookmark.url}" target="_blank" class="link">${createBookmark.url}</a></p>
+      <input type="submit" value="Read" id="read-btn" class="button">
+      <input type="submit" value="Delete" id="delete-btn" class="button">
     </article>`
   );
 }

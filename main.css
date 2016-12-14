@@ -2,6 +2,7 @@ body {
  font-family: 'Open Sans', sans-serif;
  background-color: #CFD8DC;
  text-align: center;
+
 }
 
 header {
@@ -32,6 +33,7 @@ h5 {
   width: 100%;
   background-color: #455A64;
   padding-bottom: 10px;
+
 }
 .web-title, .web-url {
   width: 90%;
@@ -48,7 +50,7 @@ h5 {
   font-size: 1em;
   font-weight: 800;
   margin: 10px 0 20px 0;
-  padding: 12px 0px;
+  padding: 10px 0px;
   width: 90%;
   border: 2px solid #FFC107;
 }
@@ -119,4 +121,45 @@ h5 {
 
 .read-bookmark {
   background-color: #F2F4F4;
+}
+
+@media screen and (min-width: 700px) {
+
+  div {
+    border: 2px solid black;
+    height:150px;
+    margin: 50px auto;
+    width: 340px;
+  }
+
+  .large {
+    font-weight: 800;
+    font-size: 2.8em;
+    color: #FFFFFF;
+    text-align: center;
+
+  }
+
+
+  .main {
+    width:46%;
+    display:inline-block;
+    height: 100vh;
+    background-color: #455A64;
+    margin-left: -2%;
+  }
+  .bookmarks{
+    width:50%;
+    display:inline-block;
+    float: right;
+  }
+  header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  div {
+    display:none;
+  }
 }

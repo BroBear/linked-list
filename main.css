@@ -42,7 +42,13 @@ h5 {
   font-size: 1.3em;
 }
 
+.message-prompt {
+  color: white;
+  font-size: 10px;
+}
+
 .amount {
+  padding: 2px;
   margin-bottom: 5px;
   color: white;
 }
@@ -53,6 +59,7 @@ h5 {
 }
 
 .stored-site {
+  height: 120px;
   margin-bottom: 10px;
   padding: 10px;
   text-align: left;
@@ -95,9 +102,7 @@ h5 {
   background-color: #FFD773;
 }
 
-.button:focus,
-.clear-btn:focus,
-.enter-btn:focus, {
+.button:focus {
   outline: none;
 }
 
@@ -166,6 +171,14 @@ h5 {
   header {
     display: none;
   }
+
+  /*.web-title, .web-url {
+    width: 70%;
+  }
+
+  .enter-btn, .clear-btn {
+    width: 70%;
+  }*/
 }
 
 @media screen and (max-width: 700px) {
